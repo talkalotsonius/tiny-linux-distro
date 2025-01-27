@@ -1,0 +1,4 @@
+[submodule "cloned-kernel"]
+	path = cloned-kernel
+	url = https://github.com/torvalds/linux.git
+	branch = master
