@@ -14,4 +14,4 @@ ld shell.o sys.o -o init -T ../$SOURCES/custom.ld --strip-all -z noexecstack
 
 echo init | cpio -H newc -o > init.cpio
 cd ../$KERNEL_SOURCE
-make isoimage FDARGS="initrd=./initcpio" FDINITRD=../build/init.cpio
+make isoimage FDARGS="initrd=/init.cpio" FDINITRD=../build/init.cpio
